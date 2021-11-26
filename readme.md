@@ -7,7 +7,7 @@
 - *gregorys-resume pdf file included via the header*
 - *includes contact info via the page's footer*
 
-<placeholder for link>
+ https://gregoryjohncarter.github.io/gregorys-portfolio/
 
 <placeholder for img>
     
