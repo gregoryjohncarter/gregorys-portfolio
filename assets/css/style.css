@@ -137,7 +137,7 @@ header {
         flex: 1 100%;
         flex-direction: column;
         align-items: stretch;
-        border: 3px solid orange;
+        
 
     }
 
@@ -156,8 +156,7 @@ header {
     }
 
 .second-container, .third-container {
- border: 3px solid green;
- display: flex;
+      display: flex;
       flex-direction: row;
       flex: 1 50%;
       justify-content: stretch;
@@ -167,14 +166,16 @@ header {
 .secondary {
   flex-direction: row;
   flex: 1 100%;
-  border: 3px solid red;
+  border: 3px solid rgb(230, 168, 0);
 }
 
 .contact {
-    border: 3px solid yellow;
-    max-width: 100%;
-    font-size: 7px;
-  
+  margin: auto;
+    display: flex;
+    flex: 1 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Helvetica', cambria, verdana;
 
 }
@@ -182,6 +183,23 @@ header {
 .contact img {
   max-width: 100px;
   max-height: 100px;
+  border-radius: 15px;
+}
+
+.contact h4 {
+  font-size: 25px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.span1 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.span2 {
+  font-size: 28px;
+  font-style: italic;
 }
 
 
@@ -213,6 +231,13 @@ header {
       font-size: 20px;
     }
   }
+
+  .contact {
+    max-width: 90%;
+    flex-wrap: wrap;
+    flex: 1 15%;
+  }
+
   
   /* MEDIA QUERY- tablets and smaller */
   @media screen and (max-width: 768px) {
@@ -227,8 +252,28 @@ header {
     font-size: 2.8vw;
   }
 
+  .contact {
+    font-size: 15px;
+  }
+
+  .contact h4 {
+    font-size: 20px;
+  
+  }
+  .contact h4 .span2 {
+    font-size: 19px;
+  }
+
+  .contact h4 .span1 {
+    font-size: 22px;
+  }
+}
+.contact {
+  flex-direction: row;
 }
 
+
+/* MEDIA QUERY - Phones and smaller */ 
   @media screen and (max-width: 575px) {
 
     * {
@@ -241,10 +286,7 @@ header {
 
     }
 
-    .content { 
-      margin: 15px 0px;
-      padding: 3px;
-    }
+  
 
     .main-container {
      flex: 1 55%;
@@ -257,4 +299,26 @@ header {
 
   .other-container {
     flex: 0 55%;
+  }
+
+  .contact img {
+    max-width: 75px;
+    max-height: 75px;
+  }
+
+  .contact {
+    font-size: 12px;
+    overflow: visible;
+  }
+
+  .contact h4 {
+    font-size: 25px;
+  
+  }
+  .contact .span2 {
+    font-size: 17px;
+  }
+
+  .contact h4 .span1 {
+    font-size: 15px;
   }
