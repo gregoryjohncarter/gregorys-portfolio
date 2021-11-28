@@ -129,7 +129,7 @@ header {
 
     .about {
         font-family: 'Garamond', Courier, monospace;
-        font-size: 15px;
+        font-size: 15.5px;
         margin-top: 15px;
         line-height: 25px;
         height: 70%;
@@ -150,18 +150,51 @@ header {
     }
 
     .main-program {
-      display: flex;
         border: 3px solid darkblue;
         flex: 1 50%;
-        flex-wrap: nowrap;
-        flex-direction: column;
+        
     }
 
-    .main-program div {
-      flex: 1;
-      width: 285px;
-      height: 165px;
-      border: 3px solid darkblue;
+   
+
+/* DIV BOX LABELS */
+
+    .main-program p {
+      font-size: 22px;
+      color: #6b86c0;
+      background-color: darkblue;
+      display: inline-flex;
+    }
+
+    .main-program span {
+      font-size: 18px;
+      color: #7598da;
+    }
+
+    .secondary p {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      font-size: 16px;
+      color: #6b86c0;
+      display: inline-flex;
+      background-color: darkblue;
+      align-items: flex-end;
+    }
+
+    .secondary span {
+      font-size: 13px;
+      color: #7598da;
+    }
+    #run-buddy {
+      background-image: url("../images/run-buddy-screen.png");
+      background-size: cover;
+    }
+
+    /* Div box labels END */
+
+    #hide-one {
+      border: 3x solid #6b86c0;
     }
 
     .other-container {
@@ -183,16 +216,9 @@ header {
 .secondary {
   flex-direction: row;
   flex: 1 100%;
-  border: 3px solid rgb(230, 168, 0);
+  border: 3px solid #7598da;
 }
 
-/* coding work div boxes for labels */
-
-.secondary div {
-  border: 3px solid blue;
-  height: 65px;
-  width: 185px;
-}
 
 .contact {
   margin: auto;
@@ -277,7 +303,7 @@ header {
   .sidebar-about, .sidebar-work, .sidebar-contact-me {
     margin: 5px 2px;
     padding: 2px;
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .main-container {
     flex: 1 35%;
@@ -302,13 +328,6 @@ header {
   flex-direction: row;
 }
 
-/* coding work div boxes for labels */
-
-.secondary div {
-  border: 3px solid blue;
-  height: 52px;
-  width: 165px;
-}
 
 
 /* MEDIA QUERY - Phones and smaller */ 
@@ -321,7 +340,7 @@ header {
     }
 
     .sidebar-about, .sidebar-work, .sidebar-contact-me {
-      font-size: 3.0vw;
+      font-size: 2.6vw;
       
 
     }
@@ -329,6 +348,10 @@ header {
     .sidebar-container {
       height: 1600px;
     }
+.about {
+  height: 35%;
+}
+    
   
     .content {
       height: 1600px;
@@ -336,7 +359,7 @@ header {
 
     .about {
       line-height: 19px;
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .about img {
@@ -375,15 +398,6 @@ header {
 
   .contact h4 .span1 {
     font-size: 13px;
-  }
-
-/* coding work div boxes for labels */
-
-  .secondary div {
-    border: 3px solid blue;
-    height: 52px;
-    width: 115px;
-    
   }
 
 }
