@@ -1,3 +1,6 @@
+* {
+}
+
 html {
   height:100%;
   width:100%;
@@ -155,7 +158,7 @@ header {
     }
 
     .main-program {
-        border: 3px solid darkblue;
+        border: 4px solid darkblue;
         flex: 1 50%;
         
     }
@@ -191,19 +194,65 @@ header {
       font-size: 13px;
       color: #7598da;
     }
+
+    /* Div Link IDs for background images */
+
+    #surf-report {
+      background-image: url("../images/codecademy-portfolio-project.png");
+      background-size: cover;
+      opacity: .6;
+    }
+
+    #surf-report:hover {
+      opacity: 1;
+    }
+
+    #led-wall {
+      background-image: url("../images/codecademy-portfolio-project.png");
+      background-size: cover;
+      opacity: .6;
+    }
+
+    #led-wall:hover {
+      opacity: 1;
+    }
+
+    #calculator {
+      background-image: url("../images/codecademy-portfolio-project.png");
+      background-size: cover;
+      opacity: .6;
+    }
+
+    #calculator:hover {
+      opacity: 1;
+    }
+
+    #pastel-puzzles {
+      background-image: url("../images/codecademy-portfolio-project.png");
+      background-size: cover;
+      opacity: .6;
+    }
+
+    #pastel-puzzles:hover {
+      opacity: 1;
+    }
+
     #run-buddy {
       background-image: url("../images/run-buddy-screen.png");
       background-size: cover;
+      opacity: .6;
     }
+
+    #run-buddy:hover {
+      opacity: 1;
+    }
+
 
     /* Div box labels END */
 
-    #hide-one {
-      border: 3x solid #6b86c0;
-    }
+   
 
     .other-container {
-      border: 3px dotted darkblue;
         display: flex;
         flex: 0 45%;
         flex-direction: column;
@@ -221,7 +270,7 @@ header {
 .secondary {
   flex-direction: row;
   flex: 1 100%;
-  border: 3px solid #7598da;
+  border: 4px solid darkblue;
 }
 
 
@@ -234,6 +283,7 @@ header {
     justify-content: center;
     font-family: 'Helvetica', cambria, verdana;
     flex-wrap: nowrap;
+    height: 500px;
 }
 
 .contact img {
@@ -291,9 +341,9 @@ header {
   }
 
   .contact {
-    max-width: 90%;
+    max-width: 78.5%;
     flex-wrap: wrap;
-    flex: 1 15%;
+    flex: 1 21%;
   }
 }
   
@@ -333,6 +383,31 @@ header {
   flex-direction: row;
 }
 
+/* 
+
+#surf-report {
+  opacity: 1;
+}
+
+#led-wall {
+  opacity: 1;
+}
+
+#calculator {
+
+  opacity: 1;
+}
+
+#pastel-puzzles {
+  opacity: 1;
+}
+
+#run-buddy {
+  opacity: 1;
+}
+
+*/ 
+
 
 
 /* MEDIA QUERY - Phones and smaller */ 
@@ -340,9 +415,11 @@ header {
 
     * {
       max-width: 375px;
-      max-height: 1800px;
+      max-height: 1400px;
     
     }
+
+
 
     .sidebar-about, .sidebar-work, .sidebar-contact-me {
       font-size: 2.6vw;
@@ -351,15 +428,15 @@ header {
     }
 
     .sidebar-container {
-      height: 1600px;
+      height: 1400px;
     }
 .about {
-  height: 35%;
+  height: 40%;
 }
     
   
     .content {
-      height: 1600px;
+
     }
 
     .about {
@@ -391,6 +468,7 @@ header {
 
   .contact {
     font-size: 12px;
+    overflow-y: hidden;
   }
 
   .contact h4 {
