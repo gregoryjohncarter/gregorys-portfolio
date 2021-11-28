@@ -1,18 +1,10 @@
-* {
-  overflow-y: visible;
-}
 
-html {
-  height:100%;
-  width:100%;
-  margin:0%;
-  padding:0%;
-}
+
+
 
 body {
     background-color: #6b86c0;
-    overflow-y: visible;
-    height: 100%;
+   
 }
 
 
@@ -128,10 +120,9 @@ header {
     display: flex;
     flex-direction: column;
     flex: 1 78.5%;
-    max-width: 78.5%;
-    height: 1400px;
     margin: 15px 10px;
     padding: 0px 4px 0px 4px;
+    
 
 
 }
@@ -312,10 +303,7 @@ header {
 
   /* MEDIA QUERY- smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
-  * {
-    max-height: 100%;
-    
-  }
+ 
     header {
       padding: 20px 23px;
       padding-bottom: 0;
@@ -351,9 +339,6 @@ header {
   /* MEDIA QUERY- tablets and smaller */
   @media screen and (max-width: 768px) {
 
-    * {
-      overflow-x: hidden;
-    }
 
     .about {
       margin: 4px 8px;
@@ -419,12 +404,16 @@ header {
 /* MEDIA QUERY - Phones and smaller */ 
   @media screen and (max-width: 575px) {
 
+* {
+  overflow-x: hidden;
+}
+    /*
     * {
       max-width: 375px;
       max-height: 1400px;
     
     }
-
+*/
 
 
     .sidebar-about, .sidebar-work, .sidebar-contact-me {
@@ -433,17 +422,18 @@ header {
 
     }
 
+    /*
     .sidebar-container {
       height: 1400px;
     }
+*/
+
+
 .about {
   height: 40%;
 }
     
   
-    .content {
-     
-    }
 
     .about {
       line-height: 19px;
@@ -474,7 +464,6 @@ header {
 
   .contact {
     font-size: 12px;
-    overflow-y: hidden;
   }
 
   .contact h4 {
