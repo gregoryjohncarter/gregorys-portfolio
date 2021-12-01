@@ -9,5 +9,5 @@
 
  https://gregoryjohncarter.github.io/gregorys-portfolio/
 
-<placeholder for img>
+<img src="assets/images/portfolio-screenshot.png" />
     
