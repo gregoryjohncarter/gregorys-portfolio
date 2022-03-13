@@ -201,13 +201,13 @@ header {
       opacity: 1;
     }
 
-    #led-wall {
-      background-image: url("../images/codecademy-portfolio-project.png");
+    #citizenship {
+      background-image: url("../images/project-2-application.png");
       background-size: cover;
       opacity: .6;
     }
 
-    #led-wall:hover {
+    #citizenship:hover {
       opacity: 1;
     }
 
